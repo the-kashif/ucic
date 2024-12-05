@@ -1,0 +1,123 @@
+.shop-banner {
+    background-image: url('/shope-banner.png');
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linear-purple-section {
+    background-image: url('/about-us/bg-top.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+}
+
+.overlay-text {
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    transform: translateY(-50%);
+    margin-bottom: 80px;
+}
+
+.ceo-image {
+    position: absolute;
+    top: -103px;
+    left: -25px;
+
+    img {
+
+        padding-right: 6rem;
+    }
+
+    .ceo-badge {
+        position: absolute;
+        bottom: 11px;
+        left: 0;
+
+        p {
+            font-size: 24px;
+        }
+    }
+
+}
+
+.section-core-value {
+    background-image: url('/section-bottom-ellipse.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: contain;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.cards-container {
+    border-radius: 20px;
+    border: 1px solid #BDBDBD;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.text-custom-gray {
+    color: #747474
+}
+
+.bg-light-pink {
+    background-color: rgba(245, 241, 255, 1);
+    border-radius: 50rem;
+}
+
+@media (max-width: 1500px) {
+    .bg-light-pink {
+        border-radius: 3rem;
+    }
+
+    .ceo-image {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    .ceo-image {
+
+        img {
+
+            padding-right: 0rem;
+        }
+
+        .ceo-badge {
+
+            p {
+                font-size: 18px;
+            }
+
+        }
+
+    }
+}
+
+@media (min-width: 992px) {
+    .section-core-value {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    .cards-container {
+        margin-bottom: 100px;
+    }
+
+    .points-border .col:not(:last-child) {
+        border-right: 1px solid #5C5C5C;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1350px;
+    }
+}
